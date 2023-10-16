@@ -31,5 +31,5 @@ jobs:
       run: |
         python iris_prepare.py --test_size=0.25 --random_state=42 --save_dir=data
         python iris_train.py --train_path=data/train.csv --save_dir=data
-        python iris_predict.py --test_path=data/test.csv --model_path=data --save_dir=data
+        python iris_predict.py --test_path=data/test.csv --model_path=data/model.pickle --save_dir=data
         python iris_test.py
